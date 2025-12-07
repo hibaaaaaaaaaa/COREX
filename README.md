@@ -51,6 +51,19 @@ This dataset includes all SPY call and put quotes, Greeks, bid–ask data, times
 
 ---
 
+## Additional Files in This Repo
+
+### `Daily_sentiment.csv`
+This is our final processed dataset that we created after running the full cluster pipeline (`ClusterFinal_Mode4`). It includes daily aggregated features such as IV Proxy, Put/Call Ratio, Large Trade Frequency, returns, and other sentiment metrics we used for clustering and modeling.
+
+### `Sampleoption.csv`
+A small cleaned sample of the raw options data. We used this for quick testing because the full dataset is too large to load locally.
+
+### `option_sample (1).csv`
+Another small sample file for local testing. This one includes a slightly different slice of the raw options quotes so we could make sure our cleaning and feature engineering steps worked before moving to the cluster.
+
+---
+
 ## Project Steps
 
 ### 1. Data Ingestion and Cleaning
